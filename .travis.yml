@@ -10,6 +10,7 @@ env:
   - DJANGO=1.10.8
   - DJANGO=1.11.10
   - DJANGO=2.0.2
+  - DJANGO=2.1
 before_install:
   - export DJANGO_SETTINGS_MODULE=suit.tests.settings
 install:
@@ -24,3 +25,7 @@ matrix:
       env: DJANGO=2.0.2
     - python: pypy
       env: DJANGO=2.0.2
+    - python: 2.7
+      env: DJANGO=2.1
+    - python: pypy
+      env: DJANGO=2.1
